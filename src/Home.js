@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Home.css";
+const apiUrl = process.env.REACT_APP_API_URL;
+
+
 
 const Home = () => {
   const [topScores, setTopScores] = useState([]);
@@ -8,7 +11,7 @@ const Home = () => {
 
   const fetchTopScores = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/top-scores');
+      const response = await fetch(`${apiUrl}/api/top-scores`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

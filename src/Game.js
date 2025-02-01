@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from "./userContext";
 import "./Game.css";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const Game = () => {
   const [elements, setElements] = useState([]);
@@ -37,7 +38,7 @@ const Game = () => {
 
   const saveScore = useCallback(async () => {
     try {
-      await fetch('http://localhost:4000/api/save-score', {
+      await fetch(`${apiUrl}/api/save-score`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

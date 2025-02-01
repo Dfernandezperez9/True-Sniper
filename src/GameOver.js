@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useUser } from "./userContext";
 import "./GameOver.css";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const GameOver = () => {
   const [topScores, setTopScores] = useState([]);
@@ -10,7 +11,7 @@ const GameOver = () => {
 
   const fetchTopScores = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/top-scores');
+      const response = await fetch(`${apiUrl}/api/top-scores`);
       const data = await response.json();
       setTopScores(data);
     } catch (error) {
