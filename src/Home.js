@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchTopScores = async () => {
     try {
-      const response = await fetch(`${apiUrl}/api/top-scores`);
+      const response = await fetch(`${apiUrl}/top-scores`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

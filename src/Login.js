@@ -25,7 +25,7 @@ const Login = () => {
             </div>
             <div className="form-container">
                 <form className="login-form" action="/countdown" method="GET" onSubmit={handleSubmit}>
-                    <input className="login-input" type="text" minLength="4" maxLength="10" pattern="[a-zA-Z]+" title="Debe contener solo letras mayúsculas o minúsculas y tener entre 4 y 10 caracteres" name="name" placeholder="Nickname here..." required/>
+                    <input className="login-input" type="text" minLength="4" maxLength="15" pattern="[a-zA-Z]+" title="Debe contener solo letras mayúsculas o minúsculas y tener entre 4 y 10 caracteres" name="name" placeholder="Nickname here..." required/>
                     <button className="login-button" type="submit">Start</button>
                 </form>
             </div>

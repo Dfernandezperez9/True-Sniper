@@ -38,7 +38,7 @@ const Game = () => {
 
   const saveScore = useCallback(async () => {
     try {
-      await fetch(`${apiUrl}/api/save-score`, {
+      await fetch(`${apiUrl}/save-score`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const GameOver = () => {
 
   const fetchTopScores = async () => {
     try {
-      const response = await fetch(`${apiUrl}/api/top-scores`);
+      const response = await fetch(`${apiUrl}/top-scores`);
       const data = await response.json();
       setTopScores(data);
     } catch (error) {
