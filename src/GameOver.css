@@ -65,6 +65,7 @@
     color: white;
     border: 2px solid white;
     border-radius: 10px;
+    width: 20vw;
     padding: 30px;
     z-index: 999;
 }
@@ -80,6 +81,7 @@
 
 .gameOver-scoreboard-title {
     cursor: default;
+    text-align: center;
     font-size: 2rem;
     color: black;
     filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white);

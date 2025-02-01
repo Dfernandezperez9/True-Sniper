@@ -34,7 +34,8 @@ const Game = () => {
 
   useEffect(() => {
     setPoints(0);
-  }, [setPoints]);
+    setLevel(1);
+  }, [setPoints, setLevel]);
 
   const saveScore = useCallback(async () => {
     try {
@@ -74,6 +75,7 @@ const Game = () => {
   const handleClickOutside = (event) => {
     if (!event.target.closest('.element')) {
       setPoints((prevPoints) => prevPoints - 100);
+      setCounter((prevcounter) => prevcounter + 1);
       setFailMessage(failMessages[Math.floor(Math.random() * failMessages.length)]);
       setFailPosition(mousePosition);
       setShowFail(true);
