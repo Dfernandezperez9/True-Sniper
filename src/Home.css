@@ -358,21 +358,24 @@
 
 @media (max-width: 768px) {
     .title {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .scoreboard-main-container {
-        width: 70vw;
+        width: 80vw;
     }
 
     .scoreboard-secondary-container {
-        width: 30vw;
+        width: 20vw;
         padding: 20px;
     }
 
-    .scoreboard-title,
-    .scoreboard-list {
+    .scoreboard-title {
         font-size: 1.5rem;
+    }
+
+    .scoreboard-list {
+        font-size: 1rem;
     }
 
     .link-container {
@@ -385,21 +388,24 @@
 
 @media (max-width: 480px) {
     .title {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .scoreboard-main-container {
-        width: 90vw;
+        width: 100vw;
     }
 
     .scoreboard-secondary-container {
-        width: 40vw;
-        padding: 15px;
+        width: 30vw;
+        padding: 10px;
     }
 
-    .scoreboard-title,
-    .scoreboard-list {
+    .scoreboard-title{
         font-size: 1.2rem;
+    }
+
+    .scoreboard-list {
+        font-size: 0.8rem;
     }
 
     .link-container {
