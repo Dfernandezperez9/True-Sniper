@@ -375,6 +375,7 @@
     }
 
     .scoreboard-list {
+        list-style: none;
         text-align: center;
         font-size: 1rem;
     }
