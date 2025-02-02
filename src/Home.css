@@ -362,11 +362,11 @@
     }
 
     .scoreboard-main-container {
-        width: 80vw;
+        width: 100vw;
     }
 
     .scoreboard-secondary-container {
-        width: 80vw;
+        width: 70vw;
         padding: 20px;
     }
 
@@ -381,14 +381,16 @@
     }
 
     .link-container {
-        font-size: 1.2rem;
-        height: 10vh;
-        width: 8vw;
+        animation: botonAnimation 2s infinite;
+        font-size: 1rem;
+        height: 16vh;
+        width: 20vw;
+        bottom: 12vh;
     }
 
     .shadow {
-        height: 10vh;
-        width: 8vw;
+        height: 16vh;
+        width: 20vw;
     }
 }
 
@@ -413,6 +415,8 @@
 
     .scoreboard-list {
         font-size: 0.8rem;
+        list-style: none;
+        text-align: center;
     }
 
     .link-container {
@@ -421,5 +425,10 @@
         height: 16vh;
         width: 20vw;
         bottom: 12vh;
+    }
+
+    .shadow {
+        height: 16vh;
+        width: 20vw;
     }
 }
