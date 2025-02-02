@@ -375,6 +375,7 @@
     }
 
     .scoreboard-list {
+        text-align: center;
         font-size: 1rem;
     }
 
@@ -396,7 +397,7 @@
     }
 
     .scoreboard-secondary-container {
-        width: 80vw;
+        width: 70vw;
         padding: 10px;
     }
 
